@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&display=swap');
+
+html {
+    font-family: 'Signika', sans-serif;
+    box-sizing: border-box;
+    color: white;
+  
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #272121;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+a {
+color: white;
+text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+img {
+    width: 300px;
+    height: 200px;
+}
+/* Header-----------*/
+.header {
+    color: #FF0000;
+    background-color: #272121 ;
+    border: solid 3px #FF0000;
+    border-radius: 7px;
+    height: 50px;
+    padding: 10px;
+    
+}
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+}
+.navbar a {
+    color: #FF0000;
+    text-decoration: none;
+}
+ .navbar li {
+     color: #FF0000;
+ }
+ 
+ .navbar li:hover {
+    animation-name: nav-animation;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-delay: 0s;
+    animation-duration: 4s;
+    animation-play-state: running;
+    }
+    
+@keyframes nav-animation {
+0% {
+    letter-spacing: 1px;
+}    
+25% {
+    letter-spacing: 5px;
+}
+50% {
+    letter-spacing: 10px;
+}
+75% {
+    letter-spacing: 5px;
+}
+100% {
+    letter-spacing: 1px;
+}
+}
+
+/* wrapper-------*/
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+i {
+    margin: 10px;
+    color: rgb(202, 10, 10);
+    font-size: 50px;
+    animation-name: biohazard;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes biohazard {
+10% {
+    transform: rotate(0.1turn);
+    color: rgb(129, 9, 9);
+
+}
+20% {
+    transform: rotate(0.2turn);
+    color: rgb(129, 9, 9);
+}
+40% {
+    transform: rotate(0.4turn);
+    color: rgb(75, 6, 6);
+}
+60% {
+    transform: rotate(0.6turn);
+    color: white;
+}
+80% {
+    transform: rotate(0.8turn);
+    color: rgb(75, 6, 6);
+
+}
+100% {
+    transform: rotate(1turn);
+    color: rgb(129, 9, 9);
+}
+}
+.disaster-list {
+    width: 100%;
+    
+}
+.linea-tiempo {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.linea-tiempo {
+    border: 3px solid #FF0000;
+}
+
+.contenedor-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px;
+    grid-gap: 60px;  
+}
+.const-img {
+    border: 3px solid rgb(87, 138, 20); 
+    border-radius: 5px;
+    padding: 4px;
+    animation-name: imagenes;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.chernobyl-img {
+    border: 3px solid rgb(87, 138, 20); 
+    border-radius: 5px;
+    padding: 4px;
+    animation-name: imagenes;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.fukushima-img {
+    border: 3px solid rgb(87, 138, 20); 
+    border-radius: 5px;
+    padding: 4px;
+    animation-name: imagenes;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes imagenes {
+    0% {
+        background: linear-gradient(0deg, rgba(227,4,4,1) 0%, rgba(0,0,0,1) 61%, rgba(36,5,4,1) 100%);
+
+    }
+    40% {
+        background: linear-gradient(0deg, rgba(227,71,4,1) 0%, rgba(0,0,0,1) 61%, rgba(36,5,4,1) 100%);
+
+    }
+    80% {
+        background: linear-gradient(0deg, rgba(227,131,4,1) 0%, rgba(0,0,0,1) 61%, rgba(36,5,4,1) 100%);
+    }
+
+    100% {
+        background: linear-gradient(0deg, rgba(227,206,4,1) 0%, rgba(0,0,0,1) 61%, rgba(36,5,4,1) 100%);
+    
+    }
+       
+    
+    
+}
+
+.wrapper h1 {
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    animation-name: titulo;
+    animation-delay: 0s;
+    animation-iteration-count: 1s;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+   
+    
+}
+.wrapper span {
+    margin: 5px;
+}
+
+@keyframes titulo {
+    10% {
+        color: rgb(224, 224, 31);
+        text-align: center;
+        letter-spacing: 200px;
+    }
+    20% {
+        color: rgb(224, 163, 31);
+        text-align: center;
+        letter-spacing: 100px;
+    }
+    40% {
+        color: rgb(224, 102, 31);
+        text-align: center;
+        letter-spacing: 50px;
+    }
+    60% {
+        color: rgb(224, 76, 31);
+        text-align: center;
+        letter-spacing: 25px;
+    }
+    80% {
+        color: rgb(224, 47, 31);
+        text-align: center;
+        letter-spacing: 1px;
+    }
+    100%{
+        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(252,82,70,1) 100%);
+        color: rgb(224, 47, 31);
+        text-align: center;
+        letter-spacing: 1px;
+        -webkit-text-stroke:rgb(224, 224, 31);
+
+    }
+}
+p {
+    text-align: center;
+}
