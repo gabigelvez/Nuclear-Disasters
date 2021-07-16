@@ -38,8 +38,8 @@ img {
 }
 /* Header-----------*/
 .header {
-    color: #FF0000;
-    background-color: #272121 ;
+    color: yellow;
+    background-color: black ;
     border: solid 3px #FF0000;
     border-radius: 7px;
     height: 50px;
@@ -149,7 +149,7 @@ i {
 }
 
 .linea-tiempo {
-    border: 3px solid #FF0000;
+    border: 3px solid rgb(255, 157, 0);
 }
 
 .contenedor-img {
@@ -159,62 +159,37 @@ i {
     grid-gap: 60px;  
 }
 .const-img {
-    border: 3px solid rgb(87, 138, 20); 
+
+    border: 3px solid black; 
     border-radius: 5px;
     padding: 4px;
-    animation-name: imagenes;
-    animation-duration: 4s;
-    animation-delay: 0s;
-    animation-play-state: running;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    box-shadow: 5px 9px 19px 11px rgba(0,0,0,0.9);
+   
 }
 
 .chernobyl-img {
-    border: 3px solid rgb(87, 138, 20); 
+    border: 3px solid black; 
     border-radius: 5px;
     padding: 4px;
-    animation-name: imagenes;
-    animation-duration: 4s;
-    animation-delay: 0s;
-    animation-play-state: running;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    box-shadow: 5px 9px 19px 11px rgba(0,0,0,0.9);
+  
 }
 
 .fukushima-img {
-    border: 3px solid rgb(87, 138, 20); 
+    border: 3px solid black; 
     border-radius: 5px;
+    box-shadow: 5px 9px 19px 11px rgba(0,0,0,0.9);
     padding: 4px;
-    animation-name: imagenes;
-    animation-duration: 4s;
-    animation-delay: 0s;
-    animation-play-state: running;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-}
-
-@keyframes imagenes {
-    0% {
-        background: linear-gradient(0deg, rgba(227,4,4,1) 0%, rgba(0,0,0,1) 61%, rgba(36,5,4,1) 100%);
-
-    }
-    40% {
-        background: linear-gradient(0deg, rgba(227,71,4,1) 0%, rgba(0,0,0,1) 61%, rgba(36,5,4,1) 100%);
-
-    }
-    80% {
-        background: linear-gradient(0deg, rgba(227,131,4,1) 0%, rgba(0,0,0,1) 61%, rgba(36,5,4,1) 100%);
-    }
-
-    100% {
-        background: linear-gradient(0deg, rgba(227,206,4,1) 0%, rgba(0,0,0,1) 61%, rgba(36,5,4,1) 100%);
-    
-    }
-       
-    
     
 }
+.intro-text {
+    margin: 5px;
+    text-align: left;
+    border: 4px solid rgb(146, 9, 9);
+    border-radius: 5px;
+    box-shadow: 5px 9px 19px 11px rgba(0,0,0,0.9);
+}
+
 
 .wrapper h1 {
 
@@ -270,7 +245,4 @@ i {
         -webkit-text-stroke:rgb(224, 224, 31);
 
     }
-}
-p {
-    text-align: center;
 }
